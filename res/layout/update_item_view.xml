@@ -42,7 +42,7 @@
             android:paddingBottom="8sp"
             android:singleLine="true"
             android:textSize="16sp"
-            tools:text="PixelExperience_device-9.0-20190324-0250-CAF-OFFICIAL.zip" />
+            tools:text="KomodoOS-vince-2.0-20200104-1517-OFFICIAL.zip" />
 
         <TextView
             android:id="@+id/build_date"
@@ -50,7 +50,7 @@
             android:layout_height="wrap_content"
             android:maxLines="2"
             android:textSize="14sp"
-            tools:text="29 February 2018" />
+            tools:text="04 January 2020" />
 
         <RelativeLayout
             android:layout_width="wrap_content"

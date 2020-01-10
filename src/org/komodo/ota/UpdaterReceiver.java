@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.pixelexperience.ota;
+package org.komodo.ota;
 
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -29,8 +29,8 @@ import android.os.SystemProperties;
 import androidx.core.app.NotificationCompat;
 import androidx.preference.PreferenceManager;
 
-import org.pixelexperience.ota.misc.Constants;
-import org.pixelexperience.ota.misc.Utils;
+import org.komodo.ota.misc.Constants;
+import org.komodo.ota.misc.Utils;
 
 public class UpdaterReceiver extends BroadcastReceiver {
 

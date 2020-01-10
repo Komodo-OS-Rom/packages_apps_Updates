@@ -14,28 +14,32 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.pixelexperience.ota.model;
+package org.komodo.ota.model;
 
-import java.io.File;
+public interface UpdateBaseInfo {
+    String getName();
 
-public interface UpdateInfo extends UpdateBaseInfo {
-    UpdateStatus getStatus();
+    String getDownloadId();
 
-    int getPersistentStatus();
+    long getTimestamp();
 
-    File getFile();
+    String getVersion();
+
+    String getDownloadUrl();
 
     long getFileSize();
 
-    int getProgress();
+    String getDonateUrl();
 
-    long getEta();
+    String getForumUrl();
 
-    long getSpeed();
+    String getWebsiteUrl();
 
-    int getInstallProgress();
+    String getNewsUrl();
 
-    boolean getAvailableOnline();
+    String getMaintainer();
 
-    boolean getFinalizing();
+    String getMaintainerUrl();
+
+    String getHash();
 }

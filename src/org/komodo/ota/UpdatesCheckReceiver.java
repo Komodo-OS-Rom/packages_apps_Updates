@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.pixelexperience.ota;
+package org.komodo.ota;
 
 import android.app.AlarmManager;
 import android.app.NotificationChannel;
@@ -29,8 +29,8 @@ import android.util.Log;
 import androidx.core.app.NotificationCompat;
 
 import org.json.JSONException;
-import org.pixelexperience.ota.download.DownloadClient;
-import org.pixelexperience.ota.misc.Utils;
+import org.komodo.ota.download.DownloadClient;
+import org.komodo.ota.misc.Utils;
 
 import java.io.File;
 import java.io.IOException;
