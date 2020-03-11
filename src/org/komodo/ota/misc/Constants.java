@@ -39,8 +39,8 @@ public final class Constants {
     static final String PROP_DEVICE = "org.komodo.device";
     static final String PROP_BUILD_VERSION = "org.komodo.version";
     static final String PROP_VERSION_CODE = "org.komodo.ota.version_code";
-    static final String OTA_URL = "https://raw.githubusercontent.com/Komodo-OS-Rom/Updater/master/%s.json";
-    static final String DOWNLOAD_WEBPAGE_URL = "https://raw.githubusercontent.com/Komodo-OS-Rom/Updater/master/%s.md";
+    static final String OTA_URL = "https://device.komodo-os.my.id/updater/%s.json";
+    static final String DOWNLOAD_WEBPAGE_URL = "https://device.komodo-os.my.id/updater/%s.md";
     public static final String DOWNLOAD_PATH = "/data/system_updates/";
     static final String EXPORT_PATH = "Komodo-Updates/";
 }
