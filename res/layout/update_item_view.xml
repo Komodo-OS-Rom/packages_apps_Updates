@@ -30,7 +30,7 @@
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:tint="@color/google_blue"
+                android:tint="@color/komodo_jade"
                 android:src="@drawable/ic_system_update"/>
 
             <TextView

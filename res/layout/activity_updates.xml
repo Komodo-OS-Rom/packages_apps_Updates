@@ -26,7 +26,7 @@
                 android:paddingBottom="5dp"
                 android:drawableTop="@drawable/ic_warning"
                 android:drawablePadding="15dp"
-                android:drawableTint="@color/google_blue"
+                android:drawableTint="@color/komodo_jade"
                 android:text="@string/list_no_updates"
                 android:textColor="?android:textColorSecondary"/>
 
