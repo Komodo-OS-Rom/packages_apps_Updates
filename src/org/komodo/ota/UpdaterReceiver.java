@@ -35,7 +35,7 @@ import org.komodo.ota.misc.Utils;
 public class UpdaterReceiver extends BroadcastReceiver {
 
     public static final String ACTION_INSTALL_REBOOT =
-            "org.pixelexperience.ota.action.INSTALL_REBOOT";
+            "org.komodo.ota.action.INSTALL_REBOOT";
 
     private static final String INSTALL_ERROR_NOTIFICATION_CHANNEL =
             "install_error_notification_channel";

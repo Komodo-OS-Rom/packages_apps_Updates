@@ -48,7 +48,7 @@ public class HttpURLConnectionClient implements DownloadClient {
                             DownloadClient.DownloadCallback callback,
                             boolean useDuplicateLinks) throws IOException {
         mClient = (HttpURLConnection) new URL(url).openConnection();
-        mClient.setRequestProperty("User-Agent", "org.pixelexperience.ota");
+        mClient.setRequestProperty("User-Agent", "org.komodo.ota");
         mDestination = destination;
         mProgressListener = progressListener;
         mCallback = callback;
@@ -167,7 +167,7 @@ public class HttpURLConnectionClient implements DownloadClient {
             String range = mClient.getRequestProperty("Range");
             mClient.disconnect();
             mClient = (HttpURLConnection) newUrl.openConnection();
-            mClient.setRequestProperty("User-Agent", "org.pixelexperience.ota");
+            mClient.setRequestProperty("User-Agent", "org.komodo.ota");
             if (range != null) {
                 mClient.setRequestProperty("Range", range);
             }
