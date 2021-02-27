@@ -54,6 +54,7 @@ import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.List;
+import java.util.Locale;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
 
@@ -146,11 +147,21 @@ public class Utils {
     }
 
     public static String getServerURL() {
-        return String.format(Constants.OTA_URL, SystemProperties.get(Constants.PROP_DEVICE), SystemProperties.get(Constants.PROP_VERSION_CODE));
+        String device = SystemProperties.get(Constants.PROP_DEVICE);
+        String ziptype = SystemProperties.get(Constants.PROP_GAPPS_VERSION).toLowerCase(Locale.ROOT);
+        // Fallback to vanilla if prop was not found
+        if (ziptype == null) ziptype = "toxicofera";
+        String serverUrl = Constants.OTA_URL;
+
+        return serverUrl.replace("{device}", device)
+                .replace("{ziptype}", ziptype);
     }
 
     public static String getDownloadWebpageUrl(String fileName) {
-        return String.format(Constants.DOWNLOAD_WEBPAGE_URL, SystemProperties.get(Constants.PROP_DEVICE), fileName);
+        String device = SystemProperties.get(Constants.PROP_DEVICE);
+        String webPageUrl = Constants.DOWNLOAD_WEBPAGE_URL;
+
+        return webPageUrl.replace("{device}", device);
     }
 
     public static void triggerUpdate(Context context, String downloadId) {
