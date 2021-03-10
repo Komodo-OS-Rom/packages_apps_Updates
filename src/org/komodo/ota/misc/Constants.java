@@ -37,7 +37,7 @@ public final class Constants {
     static final int AUTO_UPDATES_CHECK_INTERVAL_MONTHLY = 3;
     static final String PROP_AB_DEVICE = "ro.build.ab_update";
     static final String PROP_DEVICE = "org.komodo.device";
-    static final String PROP_BUILD_VERSION = "org.komodo.ota.version_code";
+    static final String PROP_BUILD_VERSION = "org.komodo.version";
     static final String PROP_GAPPS_VERSION = "org.komodo.gapps_type";
     static final String OTA_URL = "https://device.komodo-os.my.id/updater/{ziptype}/{device}.json";
     static final String DOWNLOAD_WEBPAGE_URL = "https://device.komodo-os.my.id/dl/{device}.html";
